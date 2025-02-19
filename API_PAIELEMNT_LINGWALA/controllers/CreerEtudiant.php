@@ -25,18 +25,18 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         
         // Tentative d'enregistrement de l'étudiant
         if ($etudiant->CreerEtudiant()) {
-            http_response_code(201); // Created
+            http_response_code(201); // 
             echo json_encode(array("message" => "Étudiant créé avec succès."));
         } else {
-            http_response_code(503); // Service Unavailable
+            http_response_code(503); // S
             echo json_encode(array("message" => "Impossible de créer l'étudiant."));
         }
     } else {
-        http_response_code(400); // Bad Request
+        http_response_code(400); // quand la methode n'est pas respectée
         echo json_encode(array("message" => "Données incomplètes."));
     }
 } else {
-    http_response_code(405); // Method Not Allowed
+    http_response_code(405); // 
     echo json_encode(array("message" => "Méthode non autorisée."));
 }
 ?>
