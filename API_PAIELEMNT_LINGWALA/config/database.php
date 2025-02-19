@@ -24,12 +24,5 @@ class ConnexionDB {
     }
 }
 
-// Test de la connexion
-//
-//$conn = $db->getConnexion();
-//if ($conn) {
-    //echo "Connexion réussie !";
-//} else {
-    //echo "Échec de la connexion.";
-//}
+
 ?>
